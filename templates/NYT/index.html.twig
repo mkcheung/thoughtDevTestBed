@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Articles In </title>
+</head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+<body>
+<h1>Articles From {{ month }}/{{ year }}</h1>
+
+<div id="navigation">
+
+    <table>
+        <tr>
+            <th>Title:</th><th>Author(s):</th><th>Publish Date:</th>
+
+            {% for archive in archives %}
+        <tr><td><a href="{{archive.link}}">{{ archive.headline }}</a></td> <td>{{ archive.authors }} </td> <td>{{ archive.publishDate }} </td> </tr>
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>

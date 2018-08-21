@@ -1,0 +1,9 @@
+controllers:
+    resource: ../../src/Controller/
+    type: annotation
+
+
+new_york_times:
+    resource: ../../src/Controller/NYT
+    type: annotation
+    prefix: /nyt

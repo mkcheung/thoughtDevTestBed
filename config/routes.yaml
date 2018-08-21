@@ -1,0 +1,7 @@
+index:
+    path: /
+    controller: App\Controller\DefaultController::indexAction
+
+new_york_times:
+    path: /nyt/
+    controller: App\Controller\NYT\NYTController::indexAction

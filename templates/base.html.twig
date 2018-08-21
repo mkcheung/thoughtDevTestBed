@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Prototype Research Tool{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        <h1>Prototype Research Tool</h1>
+        <h2>
+            Search Articles By Year/Month
+        </h2>
+        {{ form_start(form) }}
+        {{ form_errors(form) }}
+
+        {{ form_row(form.year) }}
+        {{ form_row(form.month) }}
+
+        {{ form_row(form.submit, { 'label': 'Search' }) }}
+        {{ form_end(form) }}
+    </body>
+</html>
